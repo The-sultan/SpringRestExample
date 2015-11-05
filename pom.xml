@@ -12,7 +12,7 @@
   <properties>
     <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <spring.version>3.0.3.RELEASE</spring.version>
+    <spring.version>4.2.2.RELEASE</spring.version>
   </properties>
     
   <repositories>
@@ -54,11 +54,17 @@
       <version>${spring.version}</version>
       <scope>compile</scope>
     </dependency>
+	<dependency>
+	<groupId>com.fasterxml.jackson.core</groupId>
+	<artifactId>jackson-databind</artifactId>
+	<version>2.6.3</version>
+</dependency>
     <dependency>
-	<groupId>org.codehaus.jackson</groupId>
-	<artifactId>jackson-mapper-asl</artifactId>
-	<version>1.9.13</version>
-    </dependency>
+	<groupId>com.fasterxml.jackson.core</groupId>
+	<artifactId>jackson-core</artifactId>
+	<version>2.6.3</version>
+</dependency>
+
   </dependencies>
   <build>
     <plugins>
